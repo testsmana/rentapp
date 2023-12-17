@@ -151,11 +151,11 @@ const Modal: React.FC<ModalProps> = ({
                 </div>
               </div>
               {/*body*/}
-              <div className="relative p-6 pt-2 pb-2">
+              <div className="relative p-6 pt-2 pb-3">
                 {body}
               </div>
               {/*footer*/}
-              <div className="flex flex-col gap-2 p-6 pt-2 pb-2">
+              <div className="flex flex-col gap-2 p-6 pt-2 pb-3">
                 <div 
                   className="
                     flex 
