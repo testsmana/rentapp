@@ -72,7 +72,6 @@ const Modal: React.FC<ModalProps> = ({
       <div
         className="
           justify-center 
-          items-center 
           flex 
           overflow-x-hidden 
           overflow-y-auto 
@@ -107,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
           `}>
             <div className="
               translate
-              h-full
+              h-auto
               lg:h-auto
               md:h-auto
               border-0 
@@ -126,7 +125,7 @@ const Modal: React.FC<ModalProps> = ({
               <div className="
                 flex 
                 items-center 
-                p-6
+                p-3
                 rounded-t
                 justify-center
                 relative
@@ -141,21 +140,22 @@ const Modal: React.FC<ModalProps> = ({
                     transition
                     absolute
                     left-9
+                    text-red-700
                   "
                   onClick={handleClose}
                 >
-                  <IoMdClose size={18} />
+                  <IoMdClose size={24} />
                 </button>
                 <div className="text-lg font-semibold">
                   {title}
                 </div>
               </div>
               {/*body*/}
-              <div className="relative p-6 flex-auto">
+              <div className="relative p-6 pt-2 pb-2">
                 {body}
               </div>
               {/*footer*/}
-              <div className="flex flex-col gap-2 p-6">
+              <div className="flex flex-col gap-2 p-6 pt-2 pb-2">
                 <div 
                   className="
                     flex 
